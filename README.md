@@ -30,8 +30,8 @@ Follow these steps to set up and run the Interactive Kanban Board Application:
 1. **Clone the Repository**  
    Use the following command to clone the repository:  
    ```bash
-   git clone https://github.com/your-repository-url.git
-   cd your-project-directory 
+   git clone https://github.com/Ajay-k4/Kanban_Board.git
+   cd  Kanban_Board
    npm install 
    npm start 
    http://localhost:3000
