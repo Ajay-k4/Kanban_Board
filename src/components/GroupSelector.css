@@ -1,0 +1,12 @@
+.group-selector {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    background-color: #e0fbfc;
+  }
+  
+  select {
+    margin-left: 10px;
+    padding: 5px;
+  }
+  

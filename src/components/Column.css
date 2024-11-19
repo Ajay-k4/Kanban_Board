@@ -1,0 +1,75 @@
+.column {
+    flex: 1;
+    background-color: #f0f0f0;
+    border-radius: 5px;
+    padding: 10px;
+  }
+  
+  .column-title {
+    font-size: 1.5em;
+    color: #2d6a4f;
+  }
+
+  .column-header {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 15px;
+  }
+  
+  .column-icon {
+    width: 24px;
+    height: 24px;
+    margin-right: 8px;
+  }
+  /* Style for Column */
+.column {
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 16px;
+  margin: 8px;
+  background-color: #f9f9f9;
+  width: 300px;
+  display: inline-block;
+  vertical-align: top;
+}
+
+.column h3 {
+  font-size: 1.2rem;
+  margin-bottom: 16px;
+  display: flex;
+  align-items: center;
+}
+
+.column img {
+  max-height: 20px;
+}
+
+/* Style for Task Cards */
+.task-card {
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  padding: 12px;
+  margin: 8px 0;
+  background-color: #fff;
+  cursor: pointer;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.task-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.task-card h4 {
+  font-size: 1rem;
+  margin: 0 0 8px;
+}
+
+.task-card p {
+  font-size: 0.875rem;
+  color: #666;
+}
+
+  
+  

@@ -1,0 +1,204 @@
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  
+  background-color:whitesmoke;
+;
+  color: #333;
+  height: 100vh;
+  margin: 0;
+}
+
+/* App Layout */
+.App {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  background-color: #f9f9f9;
+}
+
+/* Header and Footer */
+header,
+footer {
+  background-color: #2C3E50;
+  color: white;
+  text-align: center;
+  padding: 15px;
+}
+
+header h1 {
+  margin: 0;
+  font-size: 1.8rem;
+}
+
+footer p {
+  font-size: 0.9rem;
+  margin-top: 20px;
+}
+
+/* Filters Section */
+.filters {
+  display: flex;
+  justify-content:center;
+  gap: 20px;
+  padding: 15px;
+  background-color: #fff;
+  border-bottom: 1px solid #ddd;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.filters label {
+  font-weight: bold;
+  color: #555;
+}
+
+.filters select {
+  padding: 8px;
+  font-size: 14px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+/* Kanban Board */
+.board {
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  gap: 30px;
+  padding: 20px;
+  flex-grow: 1;
+}
+
+.column {
+  flex: 0 0 280px;
+  background:#F5F0E1;
+  border-radius: 8px;
+  padding: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.column h2 {
+  background-color: #333;
+  color: #F8F8F8;
+  text-align: center;
+  padding: 10px;
+  margin: 0;
+}
+
+
+.card {
+  background-color: #F5F0E1; 
+  color: #333; 
+  padding: 12px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  margin-bottom: 15px;
+}
+
+
+.card h3 {
+  margin: 0;
+  font-size: 1.9rem;
+  text-align: center;
+}
+
+
+.card p {
+  margin: 5px 0;
+  font-size: 0.9rem;
+  color: #555;
+}
+
+/* Modal */
+.modal {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: white;
+  padding: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  border-radius: 8px;
+  z-index: 1000;
+}
+
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: 999;
+}
+
+@media (max-width: 768px) {
+  .filters {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .board {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .column {
+    min-width: 100%;
+  }
+}
+.container {
+  display: flex;
+  gap: 20px; 
+  justify-content: space-between;
+  flex-wrap: wrap; 
+}
+
+.column {
+  flex: 0 0 280px; 
+  background:#4aa155;
+  border-radius: 8px;
+  padding: 10px; 
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content:flex-start; 
+  max-height: 400px; 
+  overflow-y: auto; 
+}
+
+.column h3 {
+  font-size: 1.2rem;
+  margin-bottom: 11px; 
+}
+
+.column .task {
+  background: #fff;
+  padding: 10px;
+  border-radius: 6px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  margin-bottom: 10px; 
+}
+
+.column .task:last-child {
+  margin-bottom: 0; 
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .column {
+    flex: 1 1 100%; 
+    max-height: auto; 
+  }
+}
